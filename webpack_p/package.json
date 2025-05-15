@@ -1,0 +1,34 @@
+{
+  "name": "webpack_p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server -w db.json -p 3000",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "dev": "concurrently \"npm run json-server\" \"webpack serve --mode development\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+    "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}

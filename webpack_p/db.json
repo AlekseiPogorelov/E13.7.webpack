@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Учиться",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "text": "Работать",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "text": "Спать",
+      "completed": false
+    }
+  ]
+}
